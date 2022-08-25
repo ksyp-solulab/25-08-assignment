@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import RootReducer from "./rootReducer";
-import userSaga from './userSaga'
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage' 
 import createSagaMiddleware from 'redux-saga';
+
+import RootReducer from "./rootReducer";
+import userSaga from './userSaga'
+
 
 const persistConfig = {
   key: "root",
